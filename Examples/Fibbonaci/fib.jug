@@ -1,0 +1,35 @@
+<jug> SwitchLanguage("C++") </jug>
+<jug> //////////////////////// </jug>
+
+#include <iostream>
+
+int n = 100;
+int fib(int n)
+{
+  if(n == 0 || n == 1)
+  {
+    return 1;
+  }
+  else {return fib(n-1)*fib(n-2)}
+}
+
+int main()
+{
+
+<jug> //////////////////////// </jug>
+<jug> SaveVariable(n,"Python") </jug>
+<jug> SaveFunction(fib,"Python") </jug>
+<jug> SwitchLanguage("Python") </jug>
+<jug> //////////////////////// </jug>
+
+s = [fib(i) for i in range(n)]
+print s
+<jug> // s = [1,1,2,3,5,8,13,...] </jug>
+
+<jug> //////////////////////// </jug>
+<jug> SwitchLanguage("C++") </jug>
+<jug> //////////////////////// </jug>
+
+
+ return 0;
+}
